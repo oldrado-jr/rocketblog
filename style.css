@@ -211,3 +211,23 @@ header {
 .other-posts .post-image {
   height: 260px;
 }
+
+@media (max-width: 800px) {
+  .home-post {
+    flex-direction: column-reverse;
+  }
+
+  .home-post-content,
+  .home-post-image {
+    flex-basis: initial;
+  }
+
+  .main-posts {
+    flex-direction: column;
+    row-gap: 48px;
+  }
+
+  .other-posts {
+    flex-direction: column;
+  }
+}
