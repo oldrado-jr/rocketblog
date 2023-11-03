@@ -13,6 +13,53 @@
     <link rel="stylesheet" href="./style.css">
   </head>
 
-  <body></body>
+  <body>
+    <div class="home-container">
+      <header>
+        <img src="./assets/logo.svg" alt="Logo The Blog">
+        <nav class="links">
+          <ul>
+            <li>
+              <a class="selected-link" href="/">Home</a>
+            </li>
+            <li>
+              <a href="#">Sobre</a>
+            </li>
+            <li>
+              <a href="#">Categorias</a>
+            </li>
+            <li>
+              <a href="#">Contato</a>
+            </li>
+          </ul>
+        </nav>
+        <form class="search-form">
+          <input type="text" placeholder="Buscar" class="search-input">
+          <button type="submit" class="search-button">
+            <img src="./assets/search.svg" alt="Ícone de uma lupa">
+          </button>
+        </form>
+      </header>
+      <div class="home-post">
+        <div class="post-content">
+          <span class="post-title">
+            Veja o guia definitivo para conquistar seus objetivos como DEV em
+            2022
+          </span>
+          <span class="post-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh nibh
+            eu in aliquet ut adipiscing neque. Sed volutpat aenean sit vitae,
+            sed tristique placerat hac.
+          </span>
+          <a class="post-see-more" href="#">
+            Veja mais
+            <img src="./assets/arrow-right.svg"
+              alt="Ícone de uma seta para a direita">
+          </a>
+        </div>
+        <div class="post-image"></div>
+      </div>
+    </div>
+  </body>
 
 </html>
