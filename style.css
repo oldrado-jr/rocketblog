@@ -163,7 +163,8 @@ header {
   gap: 16px;
 }
 
-.post * {
+.post *,
+.side-post * {
   line-height: 150%;
 }
 
@@ -208,8 +209,13 @@ header {
   gap: 30px;
 }
 
+.other-posts .post {
+  gap: 8px;
+}
+
 .other-posts .post-image {
   height: 260px;
+  margin-bottom: 8px;
 }
 
 @media (max-width: 800px) {
