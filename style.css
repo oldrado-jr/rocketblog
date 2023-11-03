@@ -13,8 +13,29 @@
   --green: #4fff4b;
 }
 
+.post-1 {
+  --post-bg-img: url(./assets/post-1.png);
+}
+
+.post-2 {
+  --post-bg-img: url(./assets/post-2.png);
+}
+
+.post-3 {
+  --post-bg-img: url(./assets/post-3.png);
+}
+
+.post-4 {
+  --post-bg-img: url(./assets/post-4.png);
+}
+
 body {
+  background: var(--light-purple);
   height: 100vh;
+}
+
+body * {
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -87,31 +108,30 @@ header {
   gap: 30px;
 }
 
-.post-content {
-  font-family: 'Roboto', sans-serif;
+.home-post-content {
   display: flex;
   flex-direction: column;
   gap: 16px;
   flex-basis: 50%;
 }
 
-.post-content * {
+.home-post-content * {
   font-size: 18px;
   line-height: 150%;
   color: var(--button-bg);
 }
 
-.post-title {
+.home-post-title {
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
   font-weight: 700;
 }
 
-.post-description {
+.home-post-description {
   color: var(--light-purple);
 }
 
-.post-see-more {
+.home-post-see-more {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -119,8 +139,75 @@ header {
   margin-top: 8px;
 }
 
-.post-image {
+.home-post-image {
   flex-basis: 50%;
   height: 346px;
   background: url(./assets/featured-image.png) no-repeat center/cover;
+}
+
+.content {
+  padding: 64px 135px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 64px;
+}
+
+.main-posts {
+  display: flex;
+  gap: 20px 130px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.post * {
+  line-height: 150%;
+}
+
+.post-1 {
+  flex-basis: 50%;
+}
+
+.post-image {
+  border-radius: 8px;
+  background: var(--post-bg-img) no-repeat center/cover;
+}
+
+.post-1 .post-image {
+  height: 343px;
+}
+
+.post-title {
+  color: var(--purple-bg);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.side-posts {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.side-post {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.side-post:first-child .post-title {
+  font-family: 'Poppins', sans-serif;
+}
+
+.other-posts {
+  display: flex;
+  gap: 30px;
+}
+
+.other-posts .post-image {
+  height: 260px;
 }
